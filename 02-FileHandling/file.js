@@ -1,6 +1,9 @@
 
 const fs = require("fs")
 
+const os = require("os")
+
+console.log(os.cpus().length);
 
 // Synchronus 
 // fs.writeFileSync("./test.txt","hello there dnyaesh");
@@ -27,10 +30,10 @@ const fs = require("fs")
 // })
 
 
-fs.appendFileSync("./test.txt",`hello there \n ${Date.now()}`);
+// fs.appendFileSync("./test.txt",`hello there \n ${Date.now()}`);
 
-fs.cpSync("./test.txt","./copy.txt");
+// fs.cpSync("./test.txt","./copy.txt");
 
-fs.unlinkSync("./copy.txt")
+// fs.unlinkSync("./copy.txt")
 
-console.log(fs.statSync("./text.txt"));
+// console.log(fs.statSync("./text.txt"));
