@@ -16,7 +16,7 @@ console.log(myUrl);
         break;
       case "/about":
         const username = myUrl.query.myname;
-        res.end(`hi ${username}`);
+        res.end(`hi ${username }`);
         break;
       default:
         res.end("404 not ffound");
