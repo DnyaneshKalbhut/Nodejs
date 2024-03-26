@@ -3,7 +3,7 @@ const fs = require("fs")
 
 const os = require("os")
 
-console.log(os.cpus().length);
+
 
 Synchronus 
 fs.writeFileSync("./test.txt","hello there dnyaesh");
@@ -17,8 +17,8 @@ const result= fs.readFileSync("./contact.txt","utf-8");
 console.log(result);
 
 
-Sync will return value in variable
-but Asynchronous always need an callback function to return a result
+// Sync will return value in variable
+// but Asynchronous always need an callback function to return a result
 
 
 fs.readFile("./contact.txt","utf-8",(err,result)=>{
